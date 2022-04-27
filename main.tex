@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage[a4paper,left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage{graphicx}
+\usepackage{animate}
+\usepackage{float}
+
+\newcommand{\iTotal}{203}                   % Há 203 figuras,
+\newcommand{\sEndereco}{Exemplo/simulacao} % localizadas na pasta Exemplo1.
+\newcommand{\iInicial}{0}                   % A primeira, nomeada como simulacao0,
+\newcommand{\iFinal}{202}                   % e a última como simulacao202
+
+\begin{document}
+
+\begin{figure}[H]
+    \centering
+    \animategraphics[controls,width=\textwidth{}]{\iTotal}{\sEndereco}{\iInicial}{\iFinal}
+    \caption{Representação animada}
+\end{figure}
+
+\end{document}
